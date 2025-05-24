@@ -43,7 +43,7 @@ app.post('/click', async (req, res) => {
 
 // ✅ MongoDB 연결 및 서버 시작
 (async () => {
-  const mongoURI = process.env.MONGO_URL; // Railway에서는 자동 주입됨
+  const mongoURI = process.env.MONGO_URI; // Railway에서는 자동 주입됨
   const port = process.env.PORT || 3000;
 
   console.log('⏳ MongoDB 연결 시도 중...');
